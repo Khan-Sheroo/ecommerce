@@ -32,7 +32,7 @@ export default {
         defineField({
             name: "descripition",
             title: "Descripition",
-            type: "number",
+            type: "text",
         }),
         defineField({
             name: "price",
