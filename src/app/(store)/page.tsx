@@ -9,14 +9,12 @@ export default async function Home() {
   const products = await getAllProducts();
   const categories = await getAllCategories();
 
-  console.log("Products:", products);
-
 
  
 
 
   return (
-    <div className="">
+    <div className="px-2 py-2">
       <h1>WELCOME TO CDXX</h1>
       <div className='flex flex-col items-center justify-start min-h-screen bg-gray-100'>
      <ProductsView products={products} categories={categories}/>

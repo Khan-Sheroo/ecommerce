@@ -16,7 +16,6 @@ export const getAllProducts = async () => {
             query: ALL_PRODUCTS_QUERY,
         });
 
-        console.log("logging sanity: ", products)
 
         //Return the list of products, or an empty array if none are found
         return products.data || [];

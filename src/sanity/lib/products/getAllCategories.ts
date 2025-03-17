@@ -13,8 +13,8 @@ try {
 
     //Return the list of products, or an empty array if none are found
     return categories.data || [];
-}catch (error) {
-console.error("Error fetching all categories:", error);
-return [];
-}
+    } catch (error) {
+        console.error("Error fetching all categories:", error);
+    return [];
+    }
 };

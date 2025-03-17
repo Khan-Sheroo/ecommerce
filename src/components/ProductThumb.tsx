@@ -31,7 +31,22 @@ function ProductThumb({ product }: {product: Product }) {
                             </div>
                         )}
                     </div>
-                    <span className="p-2 text-center text-gray-700">{product.name || "Unnamed Product"}</span>
+                    <div className="px-2">
+                        <h2 className="text-lg font-semibold text-gray-800 truncate">
+                            {product.name}
+                        </h2>
+
+                        <p className="py- text-sm text-gray-600 line-clamp-4">
+                            {product.descripition
+                            || "No description available"}
+                        </p>
+
+                        <p className=" text-lg text-gray-600 line-clamp-2">
+                            {product.price
+                            || "No description available"}
+                        </p>
+                    </div>
+                    
             </Link>
         );
 }
