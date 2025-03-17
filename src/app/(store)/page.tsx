@@ -18,7 +18,7 @@ export default async function Home() {
   return (
     <div>
       <h1>WELCOME TO CDXX</h1>
-      <div>
+      <div className='flex flex-col items-center justify-top min-h-screen bg-gray-100'>
      <ProductsView products={products}/>
      </div>
     </div>

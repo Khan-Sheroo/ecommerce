@@ -36,7 +36,7 @@ export const salesType = defineType({
         }),
         defineField({
             name: 'validFrom',
-            type: 'dateTime',
+            type: 'datetime',
             title: 'Valid From',
         
 
@@ -44,7 +44,7 @@ export const salesType = defineType({
         }),
         defineField({
             name: 'validUntil',
-            type: 'dateTime',
+            type: 'datetime',
             title: 'Valid Until',
         
 
