@@ -9,17 +9,17 @@ export default async function Home() {
   const products = await getAllProducts();
   const categories = await getAllCategories();
 
-  //console.log(
-  // cryto.randomUUID().slice(0, 5) +
-  // `>>> Rerendered the home page cache with ${products.length} products and ${categories.length} catergories`
-  // );
+  console.log("Products:", products);
+
+
+ 
 
 
   return (
-    <div>
+    <div className="">
       <h1>WELCOME TO CDXX</h1>
-      <div className='flex flex-col items-center justify-top min-h-screen bg-gray-100'>
-     <ProductsView products={products}/>
+      <div className='flex flex-col items-center justify-start min-h-screen bg-gray-100'>
+     <ProductsView products={products} categories={categories}/>
      </div>
     </div>
   );

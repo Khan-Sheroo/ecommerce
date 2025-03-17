@@ -31,6 +31,7 @@ function ProductThumb({ product }: {product: Product }) {
                             </div>
                         )}
                     </div>
+                    <span className="p-2 text-center text-gray-700">{product.name || "Unnamed Product"}</span>
             </Link>
         );
 }
